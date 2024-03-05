@@ -9,11 +9,11 @@ Actualmente sin mantenimiento debido al éxito de la competencia. Si quieres hac
 
 ## Instrucciones de uso
 Aplicación desarrollada en Python (v3.11) con Flask como dependencia principal.
-    python -m venv entornovirtual
-    source entornovirtual/bin/activate
-    pip install flask
-    pip freeze > requirements.txt	
-    python app.py
+1. python -m venv entornovirtual
+2. source entornovirtual/bin/activate
+3. pip install flask
+4. pip freeze > requirements.txt	
+5. python app.py
 
 Desplegará un servidor web en [http://127.0.0.1:5000](http://127.0.0.1:5000)
 
