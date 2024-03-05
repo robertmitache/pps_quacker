@@ -15,6 +15,9 @@ Aplicación desarrollada en Python (v3.11) con Flask y Mongo como dependencias p
 3. source entornovirtual/bin/activate
 5. pip install -r requirements.txt
 6. python app.py
+7. export MONGO_IP="localhost"
+8. export MONGO_PORT="27017"
+9. python app.py
 
 Desplegará un servidor web en [http://127.0.0.1:5000](http://127.0.0.1:5000)
 

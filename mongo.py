@@ -1,7 +1,15 @@
 from pymongo import MongoClient
+import os
 
-# TODO: hay que ver cómo apañamos la conexión para que podamos usar variables de entorno
-client = MongoClient('mongodb://localhost:27017')
+# Obtener la dirección IP y el puerto de MongoDB desde las variables de entorno
+mongo_ip = os.environ.get("MONGO_IP")
+mongo_port = os.environ.get("MONGO_PORT")
+
+# Crear la cadena de conexión a MongoDB utilizando las variables de entorno
+mongo_uri = f"mongodb://{mongo_ip}:{mongo_port}"
+
+# Conectar con MongoDB
+client = MongoClient(mongo_uri)
 db = client['quacker']
 users = db['users']
 quacks = db['quacks']
